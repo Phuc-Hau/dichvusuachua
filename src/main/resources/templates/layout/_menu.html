@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav th:fragment="navbar">
+    <div>
+        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+        <div class="masthead inline-header justify widgets full-height full-width shadow-mobile-header-decoration medium-mobile-menu-icon mobile-menu-icon-bg-on mobile-menu-icon-hover-bg-on dt-parent-menu-clickable show-sub-menu-on-hover"
+             role="banner">
+            <div class="top-bar top-bar-line-hide">
+                <div class="top-bar-bg"></div>
+                <div class="left-widgets mini-widgets"><span
+                        class="mini-contacts phone show-on-desktop in-top-bar-left hide-on-second-switch"><i
+                        class="fa-fw the7-mw-icon-phone-bold"></i>[(${sdt})]</span><span
+                        class="mini-contacts address show-on-desktop in-top-bar-left hide-on-second-switch"><i
+                        class="fa-fw the7-mw-icon-address-bold"></i>[(${fullname})] - [(${diachi})]</span>
+                </div>
+                <div class="right-widgets mini-widgets">
+
+                </div>
+            </div>
+
+            <header class="header-bar">
+
+                <div class="branding">
+
+                    <a class="same-logo" href=""><img class=" preload-me"
+                                                      src="https://savame.com/wp-content/uploads/2014/12/SAVAME-Logo-700x75-e1581868789545.png"
+                                                      srcset="https://savame.com/wp-content/uploads/2014/12/SAVAME-Logo-700x75-e1581868789545.png 336w, https://savame.com/wp-content/uploads/2014/12/SAVAME-Logo-700x75.png 700w"
+                                                      width="336" height="36" sizes="336px"/></a>
+                </div>
+
+                <ul id="primary-menu"
+                    class="main-nav bg-outline-decoration hover-bg-decoration active-bg-decoration level-arrows-on outside-item-remove-margin"
+                    role="menubar">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2098 first depth-0 act"
+                        role="presentation"><a href='/dichvu' data-level='1' role="menuitem"><span class="menu-item-text"><span
+                            class="menu-text">DỊCH VỤ</span></span></a></li>
+
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7165 depth-0"
+                        role="presentation"><a href='' data-level='1' role="menuitem"><span class="menu-item-text"><span
+                            class="menu-text">BLOG</span></span></a></li>
+
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2096 depth-0"
+                        role="presentation"><a href='' data-level='1'
+                                               role="menuitem"><span class="menu-item-text"><span class="menu-text">GIỚI
+									THIỆU</span></span></a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2095 last depth-0"
+                        role="presentation"><a href='/lienhe' data-level='1' role="menuitem"><span
+                            class="menu-item-text"><span class="menu-text">LIÊN HỆ</span></span></a></li>
+                </ul>
+
+            </header>
+
+        </div>
+        <div class="dt-mobile-header mobile-menu-show-divider">
+            <div class="dt-close-mobile-menu-icon">
+                <div class="close-line-wrap"><span class="close-line"></span><span class="close-line"></span><span
+                        class="close-line"></span></div>
+            </div>
+            <ul id="mobile-menu" class="mobile-main-nav" role="menubar">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2078 current_page_item menu-item-2098 act first depth-0"
+                    role="presentation"><a href='/dichvu' data-level='1' role="menuitem"><span class="menu-item-text"><span
+                        class="menu-text">DỊCH VỤ</span></span></a></li>
+
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7165 depth-0"
+                    role="presentation"><a href='' data-level='1' role="menuitem"><span class="menu-item-text"><span
+                        class="menu-text">BLOG</span></span></a></li>
+
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2096 depth-0"
+                    role="presentation"><a href='' data-level='1' role="menuitem"><span class="menu-item-text"><span
+                        class="menu-text">GIỚI
+								THIỆU</span></span></a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2095 last depth-0"
+                    role="presentation"><a href='/lienhe' data-level='1' role="menuitem"><span
+                        class="menu-item-text"><span
+                        class="menu-text">LIÊN HỆ</span></span></a></li>
+                <li ><span style="color: white">[(${fullname})] - [(${diachi})]</span></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+</body>
+</html>
