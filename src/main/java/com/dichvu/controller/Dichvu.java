@@ -20,10 +20,9 @@ public class Dichvu {
     private DichVuDao dichVuDao;
 
     @RequestMapping
-    public String in(){
+    public String i(){
         return "redirect:/dichvu";
     }
-
     @RequestMapping("/dichvu")
     public String index(Model  model){
        User userModel = userDao.findById(1).get();
